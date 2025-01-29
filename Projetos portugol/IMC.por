@@ -1,22 +1,22 @@
-programa { 
+programa {
   funcao inicio() {
     real altura, peso, imc
+    
 
-    escreva ("Informe sua altura: ")
+    escreva ("Digite sua altura: ")
     leia (altura)
-    escreva ("Informe seu peso: ")
-    leia (peso)
+    escreva ("Digite seu peso: ")
+    leia(peso)
 
-    imc = peso / (altura * altura)
+    imc=peso/(altura*altura)
 
-    escreva ("Seu IMC: ", imc)
+    escreva ("Seu imc: ", imc)
 
-    se (imc < 18.5) então
-      escreva (" (Abaixo do peso)")
-    senao se (imc >= 18.5 e imc <= 24.9) então
-      escreva (" (Normal)")
-    senao
-      escreva (" (Acima do peso)")
-    fimse
+    se       (imc <=17) escreva (" (Muito abaixo do normal)")
+    senao se (imc>17.1 e imc<=18.5) escreva (" (Abaixo do normal)")
+    senao se (imc>=18.6 e imc<=24.5) escreva (" (Normal)")
+    senao se (imc>=24.6 e imc<=30) escreva (" (Acima do normal)")
+    senao se (imc>=30.1 e imc<=35) escreva (" (Obesidade grau 1)")
+    
   }
 }
