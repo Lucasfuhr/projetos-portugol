@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-    caracter nome
+    cadeia nome
     real salariofixo, salariototal, vendas
 
     escreva ("Digite seu nome: ")
@@ -13,7 +13,7 @@ programa {
     salariototal=salariofixo+(vendas*1.1)
 
     escreva ("Seu nome: ", nome)
-    escreva ("Seu salario total: ", salariototal)
+    escreva (" Seu salario total: ", salariototal)
 
   }
 }
