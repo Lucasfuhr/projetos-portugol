@@ -9,6 +9,6 @@ programa {
 
     X=N1*N2
 
-    escreva ("A area do retangulo e igual a: ", X)
+    escreva ("A area do retangulo e igual a: ", X, " m2")
   }
 }
